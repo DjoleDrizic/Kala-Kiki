@@ -8,8 +8,6 @@ const options = {
 app.use(express.static('public', options))
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use('/api/users', require('./routes/api/users'))
-
 
 app.get('/', (req, res) => {
     res.send('Online')
