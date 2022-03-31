@@ -2,8 +2,7 @@ const express = require('express')
 const app = express()
 
 const options = {
-    extensions: ['htm', 'html'],
-    index: true
+    extensions: ['htm', 'html']
 }
 app.use(express.static('public', options))
 app.use(express.json());
